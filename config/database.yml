@@ -17,7 +17,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: GoTime2_development
+  database: gotime_development
   pool: 5
   username: chad
   password: edwards7
@@ -46,7 +46,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: GoTime2_test
+  database: gotime_test
   pool: 5
   username: chad
   password: edwards7
@@ -54,7 +54,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: GoTime2_production
+  database: gotime_production
   pool: 5
   username: chad
   password: edwards7
