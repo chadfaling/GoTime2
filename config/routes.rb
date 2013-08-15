@@ -1,4 +1,9 @@
 GoTime2::Application.routes.draw do
+  get "static_pages/home"
+  get "static_pages/contact_us"
+  get "static_pages/the_science"
+  get "static_pages/my_account"
+  get "static_pages/shopping_cart"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
