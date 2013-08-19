@@ -1,4 +1,6 @@
 GoTime2::Application.routes.draw do
+  resources :users
+
   get "static_pages/home"
   get "static_pages/contact_us"
   get "static_pages/the_science"
