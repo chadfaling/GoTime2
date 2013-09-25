@@ -19,5 +19,9 @@ module GoTime2
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+    # below line added by chad faling on 9/9/2013 to make app compatible with bootstrap
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+
   end
 end
