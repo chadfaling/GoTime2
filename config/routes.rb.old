@@ -1,13 +1,11 @@
 GoTime2::Application.routes.draw do
   resources :users
 
-  root  'static_pages#home'
-  match '/contact_us',    to:'static_pages#contact_us',    via: 'get'
-  match '/the_science',   to:'static_pages#the_science',   via: 'get'
-  match '/my_account',    to:'static_pages#my_account',    via: 'get'
-  match '/shopping_cart', to:'static_pages#shopping_cart', via: 'get'
-
-
+  get "static_pages/home"
+  get "static_pages/contact_us"
+  get "static_pages/the_science"
+  get "static_pages/my_account"
+  get "static_pages/shopping_cart"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
