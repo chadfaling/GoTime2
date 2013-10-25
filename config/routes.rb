@@ -1,11 +1,13 @@
 GoTime2::Application.routes.draw do
   resources :users
+  get "users/new"
 
   root  'static_pages#home'
   match '/contact_us',    to:'static_pages#contact_us',    via: 'get'
   match '/the_science',   to:'static_pages#the_science',   via: 'get'
   match '/my_account',    to:'static_pages#my_account',    via: 'get'
   match '/shopping_cart', to:'static_pages#shopping_cart', via: 'get'
+  match '/signup',        to:'users#new',                  via: 'get'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
