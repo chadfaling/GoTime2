@@ -1,6 +1,5 @@
 GoTime2::Application.routes.draw do
   resources :users
-  get "users/new"
 
   root  'static_pages#home'
   match '/contact_us',    to:'static_pages#contact_us',    via: 'get'
